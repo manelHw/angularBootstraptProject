@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { WizzardComponent } from './wizzard/wizzard.component';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +8,7 @@ import { WizzardComponent } from './wizzard/wizzard.component';
   
 export class AppComponent {
   title = 'app';
+  ngOnInit() {
+
+  }
 }

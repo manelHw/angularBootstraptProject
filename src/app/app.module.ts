@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+//wizzard
+import { FormWizardModule } from 'angular2-wizard';
 
 import { AppComponent } from './app.component';
 import { CountryPickerComponent } from './country-picker/country-picker.component';
@@ -25,7 +26,7 @@ import { NavtabComponent } from './navtab/navtab.component';
     ResultComponent,
     WorkComponent,
     WorkflowComponent,
-    NavtabComponent
+    NavtabComponent,
   ],
   imports: [
     BrowserModule
