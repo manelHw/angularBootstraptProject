@@ -1,35 +1,58 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-//wizzard
-import { FormWizardModule } from 'angular2-wizard';
-
 import { AppComponent } from './app.component';
-import { CountryPickerComponent } from './country-picker/country-picker.component';
-import { WizzardComponent } from './wizzard/wizzard.component';
-import { AdressComponent } from './adress/adress.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { PersonalComponent } from './personal/personal.component';
-import { ResultComponent } from './result/result.component';
-import { WorkComponent } from './work/work.component';
-import { WorkflowComponent } from './workflow/workflow.component';
-import { NavtabComponent } from './navtab/navtab.component';
+import { WizzardComponent } from './layout/wizzard/wizzard.component';
+import { AdressComponent } from './Components/adress/adress.component';
+import { NavbarComponent } from './Components/navbar/navbar.component';
+import { RouterModule, Routes } from '@angular/router';
+import { ButtonsComponent } from './layout/buttons/buttons.component';
+import { TabsComponent } from './layout/tabs/tabs.component';
+import { AnimationComponent } from './layout/animation/animation.component';
+import { FeaturesComponent } from './layout/features/features.component';
+import { GeneralInfoComponent } from './Components/general-info/general-info.component';
+import { CommentsComponent } from './Components/comments/comments.component';
+import { FinishWizardComponent } from './Components/finish-wizard/finish-wizard.component';
+import { WizardTabsComponent } from './Components/wizard-tabs/wizard-tabs.component';
+import { HomeComponent } from './layout/home/home.component';
+import { ProgressbarComponent } from './Components/progressbar/progressbar.component';
 
+const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
+
+  { path: 'wizzard', redirectTo: 'wizzard/adress' },
+  { path: 'buttons', component: ButtonsComponent },
+  { path: 'tabs', component: TabsComponent },
+  { path: 'animation', component: AnimationComponent },
+  { path: 'features', component: FeaturesComponent },
+  { path: 'wizzard/adress', component: AdressComponent },
+  { path: 'wizzard/info', component: GeneralInfoComponent },
+  { path: 'wizzard/comments', component: CommentsComponent },
+  { path: 'wizzard/finish', component: FinishWizardComponent },
+
+
+
+
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    CountryPickerComponent,
     WizzardComponent,
     AdressComponent,
     NavbarComponent,
-    PersonalComponent,
-    ResultComponent,
-    WorkComponent,
-    WorkflowComponent,
-    NavtabComponent,
+    ButtonsComponent,
+    TabsComponent,
+    AnimationComponent,
+    FeaturesComponent,
+    GeneralInfoComponent,
+    CommentsComponent,
+    FinishWizardComponent,
+    WizardTabsComponent,
+    HomeComponent,
+    ProgressbarComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule, RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

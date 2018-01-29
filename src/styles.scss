@@ -1,11 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 /* using Sass */
-
-@import 'styles/components/btn';
-
-
-
-
-
-
+.mywizard {
+  margin-top: 3rem;
+  .h1{
+    align-content:center;
+    margin-left:5rem
+  }
+}
 
