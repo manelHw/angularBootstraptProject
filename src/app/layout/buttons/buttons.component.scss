@@ -1,0 +1,25 @@
+table, th, td {
+  padding: 20px;
+  /*border-bottom: 1px solid #ddd;*/
+}
+
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+.StandardTable thead th {
+  background-color: #a3a3a1;
+  height:4rem;
+}
+
+
+table{
+  width:100%;
+}
+
+.tableHeader{
+  vertical-align:bottom;
+}

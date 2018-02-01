@@ -15,6 +15,9 @@ import { FinishWizardComponent } from './Components/finish-wizard/finish-wizard.
 import { WizardTabsComponent } from './Components/wizard-tabs/wizard-tabs.component';
 import { HomeComponent } from './layout/home/home.component';
 import { ProgressbarComponent } from './Components/progressbar/progressbar.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SidebarModule } from 'ng-sidebar';
+
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -50,9 +53,10 @@ const appRoutes: Routes = [
     WizardTabsComponent,
     HomeComponent,
     ProgressbarComponent,
+
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(appRoutes)
+    BrowserModule, RouterModule.forRoot(appRoutes), SidebarModule.forRoot(), NgbModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

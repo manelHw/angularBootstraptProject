@@ -2,9 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app\\wizzard",
-    "\\src\\styles\\components"
+    "\\src\\app",
+    "\\src\\app\\Components",
+    "\\src\\app\\layout",
+    "\\src\\app\\layout\\buttons",
+    "\\src\\assets",
+    "\\src\\assets\\font",
+    "\\src\\assets\\style"
   ],
-  "SelectedNode": "\\karma.conf.js",
+  "SelectedNode": "\\src\\app\\layout\\buttons\\buttons.component.html",
   "PreviewInSolutionExplorer": false
 }
